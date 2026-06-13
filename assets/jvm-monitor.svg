@@ -58,21 +58,21 @@
     <text x="15" y="16" fill="#9ca3af" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold" letter-spacing="0.5">CPU LOAD (COMMIT RATE / 7D)</text>
     
     <!-- Graph Grid Lines -->
-    <line x1="35" y1="125" x2="227" y2="125" stroke="#1f2937" stroke-width="1" />
-    <line x1="35" y1="100" x2="227" y2="100" stroke="#1f2937" stroke-dasharray="2 3" stroke-width="0.75" opacity="0.5" />
-    <line x1="35" y1="75" x2="227" y2="75" stroke="#1f2937" stroke-dasharray="2 3" stroke-width="0.75" opacity="0.5" />
+    <line x1="35" y1="95" x2="227" y2="95" stroke="#1f2937" stroke-width="1" />
+    <line x1="35" y1="70" x2="227" y2="70" stroke="#1f2937" stroke-dasharray="2 3" stroke-width="0.75" opacity="0.5" />
+    <line x1="35" y1="45" x2="227" y2="45" stroke="#1f2937" stroke-dasharray="2 3" stroke-width="0.75" opacity="0.5" />
     
     <!-- Sparkline Line (Solid Emerald Green) -->
-    <path d="M 220,120 L 252,120 L 284,120 L 316,120 L 348,120 L 380,120 L 412,75" fill="none" stroke="#10b981" stroke-width="2.25" filter="url(#glow-node)" />
+    <path d="M 35,95 L 67,95 L 99,95 L 131,95 L 163,95 L 195,95 L 227,45" fill="none" stroke="#10b981" stroke-width="2.25" filter="url(#glow-node)" />
 
     <!-- Sparkline Nodes -->
-    <circle cx="220" cy="120" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="252" cy="120" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="284" cy="120" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="316" cy="120" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="348" cy="120" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="380" cy="120" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" />
-    <circle cx="412" cy="75" r="4.5" fill="#10b981" filter="url(#glow-node)" />
-    <circle cx="412" cy="75" r="8" fill="none" stroke="#10b981" stroke-width="1" opacity="0.5" />
+    <circle cx="35" cy="95" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="67" cy="95" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="99" cy="95" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="131" cy="95" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="163" cy="95" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" /><circle cx="195" cy="95" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" />
+    <circle cx="227" cy="45" r="4.5" fill="#10b981" filter="url(#glow-node)" />
+    <circle cx="227" cy="45" r="8" fill="none" stroke="#10b981" stroke-width="1" opacity="0.5" />
     
     <!-- Sparkline Labels -->
-    <text x="35" y="138" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8" font-weight="bold">7D AGO</text>
-    <text x="227" y="138" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8" font-weight="bold" text-anchor="end">TODAY</text>
+    <text x="35" y="112" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8" font-weight="bold">7D AGO</text>
+    <text x="227" y="112" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8" font-weight="bold" text-anchor="end">TODAY</text>
   </g>
 
   <!-- Footer Stats Separator -->

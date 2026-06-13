@@ -56,15 +56,15 @@ def generate_svg():
     days, commits = get_commit_activity()
 
     # Draw CPU sparkline path
-    # X range: 220 to 412 (step 32)
-    # Y range: 70 (high activity/low Y) to 120 (no activity/high Y)
+    # X range: 35 to 227 (step 32) relative to group translate(185, 50)
+    # Y range: 45 (high activity/low Y) to 95 (no activity/high Y)
     max_c = max(commits) if max(commits) > 0 else 1
     points = []
-    x_start = 220
+    x_start = 35
     x_step = 32
     for idx, c in enumerate(commits):
         x = x_start + idx * x_step
-        y = 120 - int((c / max_c) * 45)
+        y = 95 - int((c / max_c) * 50)
         points.append((x, y))
 
     polyline_points = " ".join(f"{x},{y}" for x, y in points)
@@ -145,9 +145,9 @@ def generate_svg():
     <text x="15" y="16" fill="#9ca3af" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold" letter-spacing="0.5">CPU LOAD (COMMIT RATE / 7D)</text>
     
     <!-- Graph Grid Lines -->
-    <line x1="35" y1="125" x2="227" y2="125" stroke="#1f2937" stroke-width="1" />
-    <line x1="35" y1="100" x2="227" y2="100" stroke="#1f2937" stroke-dasharray="2 3" stroke-width="0.75" opacity="0.5" />
-    <line x1="35" y1="75" x2="227" y2="75" stroke="#1f2937" stroke-dasharray="2 3" stroke-width="0.75" opacity="0.5" />
+    <line x1="35" y1="95" x2="227" y2="95" stroke="#1f2937" stroke-width="1" />
+    <line x1="35" y1="70" x2="227" y2="70" stroke="#1f2937" stroke-dasharray="2 3" stroke-width="0.75" opacity="0.5" />
+    <line x1="35" y1="45" x2="227" y2="45" stroke="#1f2937" stroke-dasharray="2 3" stroke-width="0.75" opacity="0.5" />
     
     <!-- Sparkline Line (Solid Emerald Green) -->
     <path d="M {polyline_points.replace(' ', ' L ')}" fill="none" stroke="#10b981" stroke-width="2.25" filter="url(#glow-node)" />
@@ -156,8 +156,8 @@ def generate_svg():
     {circles_svg}
     
     <!-- Sparkline Labels -->
-    <text x="35" y="138" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8" font-weight="bold">7D AGO</text>
-    <text x="227" y="138" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8" font-weight="bold" text-anchor="end">TODAY</text>
+    <text x="35" y="112" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8" font-weight="bold">7D AGO</text>
+    <text x="227" y="112" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8" font-weight="bold" text-anchor="end">TODAY</text>
   </g>
 
   <!-- Footer Stats Separator -->
