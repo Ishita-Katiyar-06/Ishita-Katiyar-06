@@ -20,6 +20,13 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Git Sync
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout main
+          git pull --rebase origin main
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -30,14 +37,10 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
           git add assets/jvm-monitor.svg
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "chore: auto-update JVM monitor dashboard SVG"
-            git push origin HEAD:main
+            git push origin main
           fi
