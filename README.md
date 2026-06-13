@@ -39,6 +39,17 @@ graph TB
     PRJ -.reads from.-> REPO[("GitHub Repositories")]
     CUR -.streams from.-> LOOP{{"Always-on<br/>learning loop"}}
     CON -.filters via.-> INBOX[("Genuine messages<br/>only")]
+
+    classDef default fill:#1e1e24,stroke:#30363d,stroke-width:1px,color:#c9d1d9;
+    classDef gateway fill:#102a12,stroke:#3fb950,stroke-width:2px,color:#3fb950;
+    classDef recruiter fill:#162438,stroke:#58a6ff,stroke-width:2px,color:#58a6ff;
+    classDef service fill:#211438,stroke:#8957e5,stroke-width:1px,color:#d3b8f7;
+    classDef storage fill:#2a1c10,stroke:#da761b,stroke-width:1px,color:#ffca99;
+
+    class REC recruiter;
+    class GW gateway;
+    class SKL,PRJ,CUR,CON service;
+    class KB,REPO,LOOP,INBOX storage;
 ```
 
 ---
