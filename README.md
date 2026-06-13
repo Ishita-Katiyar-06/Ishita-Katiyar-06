@@ -15,7 +15,7 @@
 
 2026-06-12 09:41:02.118  INFO 1 --- [main] c.ishitakatiyar.Profile : Starting Java-Backend-Profile on port 8080
 2026-06-12 09:41:02.121  INFO 1 --- [main] c.ishitakatiyar.Profile : Active profiles: high-scalability, system-design
-2026-06-12 09:41:02.847  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (https://github.com/ishita3075)
+2026-06-12 09:41:02.847  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (https://github.com/Ishita-Katiyar-06)
 ```
 
 <div align="center">
@@ -378,7 +378,7 @@ public class IshitaKatiyar {
         <img src="https://skillicons.dev/icons?i=spring,postgres,react" height="24" alt="stack"/>
       </td>
       <td><code>RUNNING</code></td>
-      <td><a href="https://github.com/ishita3075/Contract-analyzer"><img src="https://img.shields.io/badge/View_Repo-0d1117?style=flat&logo=github&logoColor=white&labelColor=0d1117" alt="Repo"/></a></td>
+      <td><a href="https://github.com/Ishita-Katiyar-06/Contract-analyzer"><img src="https://img.shields.io/badge/View_Repo-0d1117?style=flat&logo=github&logoColor=white&labelColor=0d1117" alt="Repo"/></a></td>
     </tr>
     <tr>
       <td><strong>aarambhSafetyAppBackendBean</strong></td>
@@ -387,7 +387,7 @@ public class IshitaKatiyar {
         <img src="https://skillicons.dev/icons?i=spring" height="24" alt="Spring"/><img src="./assets/expo.svg" height="24" alt="Expo"/><img src="https://skillicons.dev/icons?i=js,java" height="24" alt="JS, Java"/>
       </td>
       <td><code>RUNNING</code></td>
-      <td><a href="https://github.com/ishita3075/Aarambh-App-Backend"><img src="https://img.shields.io/badge/View_Repo-0d1117?style=flat&logo=github&logoColor=white&labelColor=0d1117" alt="Repo"/></a></td>
+      <td><a href="https://github.com/Ishita-Katiyar-06/Aarambh-App-Backend"><img src="https://img.shields.io/badge/View_Repo-0d1117?style=flat&logo=github&logoColor=white&labelColor=0d1117" alt="Repo"/></a></td>
     </tr>
     <tr>
       <td><strong>plannedFutureModule</strong></td>
@@ -414,14 +414,14 @@ public class IshitaKatiyar {
           "type": "SpringBootApplication",
           "dependencies": ["postgresRepository", "springSecurityJwt", "ollamaAIClient"],
           "status": "RUNNING",
-          "resource": "https://github.com/ishita3075/Contract-analyzer"
+          "resource": "https://github.com/Ishita-Katiyar-06/Contract-analyzer"
         },
         "aarambhSafetyAppBackendBean": {
           "scope": "singleton",
           "type": "SpringBootApplication",
           "dependencies": ["groqWhisper", "kotlinSilentSMS", "cloudinaryStorage"],
           "status": "RUNNING",
-          "resource": "https://github.com/ishita3075/Aarambh-App-Backend"
+          "resource": "https://github.com/Ishita-Katiyar-06/Aarambh-App-Backend"
         },
         "plannedFutureModule": {
           "scope": "prototype",
@@ -510,20 +510,20 @@ public class IshitaKatiyar {
 
 <table border="0"><tr>
 <td>
-  <img src="https://github-readme-stats.vercel.app/api?username=ishita3075&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&ring_color=3fb950" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Ishita-Katiyar-06&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&ring_color=3fb950" alt="GitHub Stats"/>
 </td>
 <td>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ishita3075&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e" alt="Top Languages"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ishita-Katiyar-06&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e" alt="Top Languages"/>
 </td>
 </tr></table>
 
 <br>
 
-![Streak](https://streak-stats.demolab.com/?user=ishita3075&theme=github-dark-blue&hide_border=true&background=0d1117&ring=3fb950&fire=f0931c&currStreakLabel=58a6ff&sideNums=8b949e&sideLabels=8b949e&dates=8b949e)
+![Streak](https://streak-stats.demolab.com/?user=Ishita-Katiyar-06&theme=github-dark-blue&hide_border=true&background=0d1117&ring=3fb950&fire=f0931c&currStreakLabel=58a6ff&sideNums=8b949e&sideLabels=8b949e&dates=8b949e)
 
 <br>
 
-[![Activity](https://github-readme-activity-graph.vercel.app/graph?username=ishita3075&bg_color=0d1117&color=58a6ff&line=3fb950&point=f0931c&area=true&area_color=1c2432&hide_border=true&custom_title=)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Activity](https://github-readme-activity-graph.vercel.app/graph?username=Ishita-Katiyar-06&bg_color=0d1117&color=58a6ff&line=3fb950&point=f0931c&area=true&area_color=1c2432&hide_border=true&custom_title=)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
@@ -533,9 +533,9 @@ public class IshitaKatiyar {
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ishita3075/ishita3075/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ishita3075/ishita3075/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/ishita3075/ishita3075/output/github-contribution-grid-snake.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ishita-Katiyar-06/Ishita-Katiyar-06/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ishita-Katiyar-06/Ishita-Katiyar-06/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Ishita-Katiyar-06/Ishita-Katiyar-06/output/github-contribution-grid-snake.svg">
   </picture>
 </div>
 
@@ -556,7 +556,7 @@ public class IshitaKatiyar {
     <tr>
       <td><code>GitHubListener</code></td>
       <td><img src="https://skillicons.dev/icons?i=github" height="16" alt="GitHub"/> GitHub</td>
-      <td><a href="https://github.com/ishita3075"><code>github.com/ishita3075</code></a></td>
+      <td><a href="https://github.com/Ishita-Katiyar-06"><code>github.com/Ishita-Katiyar-06</code></a></td>
       <td><code>LISTENING</code></td>
     </tr>
     <tr>
@@ -616,7 +616,7 @@ Caused by: java.lang.OutOfMemoryError: TooManyOpenTabsException: Heap space exha
 
 ```
 2026-06-12 23:59:59.999  INFO 1 --- [SpringApplicationShutdownHook] c.ishitakatiyar.Profile : Closing ApplicationContext
-2026-06-12 23:59:59.999  INFO 1 --- [SpringApplicationShutdownHook] c.ishitakatiyar.Profile : Thanks for stopping by, /ishita3075
+2026-06-12 23:59:59.999  INFO 1 --- [SpringApplicationShutdownHook] c.ishitakatiyar.Profile : Thanks for stopping by, /Ishita-Katiyar-06
 
 Process finished with exit code 0
 ```
@@ -631,5 +631,5 @@ Process finished with exit code 0
   <img src="./assets/loading.gif" width="100%" alt="Loading Pacman"/>
   <br><br>
   
-  ![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=ishita3075.ishita3075&left_color=0d1117&right_color=6db33f&left_text=profile%20views)
+  ![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=Ishita-Katiyar-06.Ishita-Katiyar-06&left_color=0d1117&right_color=6db33f&left_text=profile%20views)
 </div>
