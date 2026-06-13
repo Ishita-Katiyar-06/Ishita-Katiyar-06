@@ -93,7 +93,7 @@ public class IshitaKatiyar {
 <div align="center">
   <kbd>
     <br>
-    &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,docker,linux,git" alt="Tech Stack" /> &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,mongodb,redis,docker,linux,git,c,cpp,python,html,css,js,postman" alt="Tech Stack" /> &nbsp;&nbsp;&nbsp;&nbsp;
     <br>
     &nbsp;
   </kbd>
@@ -154,12 +154,17 @@ public class IshitaKatiyar {
     <groupId>database</groupId>
     <artifactId>mysql</artifactId>
 </dependency>
+<dependency>
+    <groupId>database</groupId>
+    <artifactId>mongodb</artifactId>
+</dependency>
 ```
 
 </td>
 <td align="center" valign="middle">
 <img src="https://skillicons.dev/icons?i=postgres" width="48" alt="PostgreSQL"/>
 <img src="https://skillicons.dev/icons?i=mysql" width="48" alt="MySQL"/>
+<img src="https://skillicons.dev/icons?i=mongodb" width="48" alt="MongoDB"/>
 </td>
 </tr>
 
