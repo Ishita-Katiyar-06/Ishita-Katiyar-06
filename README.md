@@ -21,9 +21,7 @@
 <div align="center">
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=2200&pause=600&color=3FB950&center=true&vCenter=true&width=600&height=35&lines=Bean+%27javaProficiency%27+registered+(singleton);Bean+%27springBootExpertise%27+registered+(primary);Bean+%27growthMindset%27+registered+(never+recycled);Started+Profile+in+2.847+seconds;%3A%3A+Always+running+%3A%3A)](https://git.io/typing-svg)
-
-<br><br>
-
+<br>
 <img src="./assets/jvm-monitor.svg" alt="JVM System Monitor" width="480" />
 
 </div>
@@ -93,7 +91,7 @@ public class IshitaKatiyar {
 <div align="center">
   <kbd>
     <br>
-    &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,mongodb,redis,docker,linux,git,c,cpp,python,html,css,js,postman" alt="Tech Stack" /> &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,mongodb,redis,docker,linux,git,c,cpp,python,html,css,js,postman&perline=8" alt="Tech Stack" /> &nbsp;&nbsp;&nbsp;&nbsp;
     <br>
     &nbsp;
   </kbd>
@@ -517,7 +515,7 @@ Process finished with exit code 0
 ---
 
 <div align="center">
-  <img src="./assets/loading.gif" width="100" alt="Loading Pacman"/>
+  <img src="./assets/loading.gif" width="100%" alt="Loading Pacman"/>
   <br><br>
   
   ![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=ishita3075.ishita3075&left_color=0d1117&right_color=6db33f&left_text=profile%20views)
