@@ -512,7 +512,8 @@ Process finished with exit code 0
 ---
 
 <div align="center">
-
-![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=ishita3075.ishita3075&left_color=0d1117&right_color=6db33f&left_text=profile%20views)
-
+  <img src="./assets/loading.gif" width="100" alt="Loading Pacman"/>
+  <br><br>
+  
+  ![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=ishita3075.ishita3075&left_color=0d1117&right_color=6db33f&left_text=profile%20views)
 </div>
