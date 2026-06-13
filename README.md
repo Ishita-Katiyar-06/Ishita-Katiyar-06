@@ -75,9 +75,13 @@ public class IshitaKatiyar {
 
 ## `pom.xml`
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,docker,linux,git" alt="Tech Stack" />
-</p>
+<table>
+  <tr>
+    <td>
+      <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,docker,linux,git" alt="Tech Stack" />
+    </td>
+  </tr>
+</table>
 
 <details>
 <summary><b>View Maven pom.xml</b></summary>
