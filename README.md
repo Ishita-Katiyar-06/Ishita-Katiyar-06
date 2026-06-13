@@ -145,53 +145,6 @@ public class IshitaKatiyar {
 
 ---
 
-## Application Context
-
-<table width="100%">
-  <thead>
-    <tr>
-      <th align="left" width="22%">Bean Name</th>
-      <th align="left" width="13%">Scope</th>
-      <th align="left" width="20%">Status</th>
-      <th align="left" width="45%">Description / Boot Registry Logs</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>consistency</code></td>
-      <td><code>singleton</code></td>
-      <td>Active</td>
-      <td>Singleton instance tracking daily commits, refactoring, and code reviews.</td>
-    </tr>
-    <tr>
-      <td><code>systemDesignSkills</code></td>
-      <td><code>singleton</code></td>
-      <td>Scaling</td>
-      <td>Compiling caching strategies, DB partitioning, and API gateway routes.</td>
-    </tr>
-    <tr>
-      <td><code>cleanArchitecture</code></td>
-      <td><code>singleton</code></td>
-      <td>Active</td>
-      <td>Enforcing separation of concerns. Monitored for circular dependencies.</td>
-    </tr>
-    <tr>
-      <td><code>frontendSkills</code></td>
-      <td><code>prototype</code></td>
-      <td>Lazy-loaded</td>
-      <td>Initialized on demand for responsive layouts and mobile viewports.</td>
-    </tr>
-    <tr>
-      <td><code>growthMindset</code></td>
-      <td><code>primary</code></td>
-      <td>Core</td>
-      <td>Autowired for continuous learning. Resilient under load, non-nullable.</td>
-    </tr>
-  </tbody>
-</table>
-
----
-
 ## `/actuator/beans`
 
 <table width="100%">
