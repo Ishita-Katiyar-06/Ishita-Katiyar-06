@@ -1,53 +1,3 @@
-<!--
-  ════════════════════════════════════════════════════════════════════
-   ASSETS TO CREATE — three things, ranked by impact
-  ════════════════════════════════════════════════════════════════════
-
-   1. assets/boot.gif      → THE HERO. See full instructions below.
-   2. assets/profile.png   → your photo, square-ish, 300–400px
-   3. assets/demo.gif      → optional. "tail -f" of one project's logs.
-
-   Search "YOUR_" to find every text placeholder in this file.
-  ════════════════════════════════════════════════════════════════════
--->
-
-<!--
-  ════════════════════════════════════════════════════════════════════
-   HERO ASSET — assets/boot.gif
-  ════════════════════════════════════════════════════════════════════
-   This is YOUR terminal printing YOUR custom Spring Boot banner.
-   Nobody else can have this exact GIF — it's generated from your
-   own banner.txt on your own machine. This is the entire point.
-
-   STEP 1 — Generate ASCII art of your name
-     → Go to patorjk.com/software/taag
-     → Font: "Standard" or "Slant" both look great
-     → Type your name, copy the ASCII output
-
-   STEP 2 — Create a banner.txt (real Spring Boot feature)
-     → In any Spring Boot project: src/main/resources/banner.txt
-     → Paste your ASCII art name at the top
-     → Below it add a tagline, e.g.:
-         Backend Developer | Java | Spring Boot | ${spring-boot.version}
-
-     Spring Boot automatically prints this file on EVERY startup —
-     this is not a trick, it's a documented feature.
-
-   STEP 3 — Record the terminal
-     npm install -g terminalizer
-     terminalizer record boot
-       → run: ./mvnw spring-boot:run
-       → wait for "Started Application in X seconds"
-       → Ctrl+D
-     terminalizer render boot -o boot.gif
-
-   STEP 4 — Save as assets/boot.gif (~700px wide, under 5MB)
-
-   No banner.txt yet? The static block below works as a placeholder —
-   the README still looks complete without the GIF.
-  ════════════════════════════════════════════════════════════════════
--->
-
 <div align="center">
   <img src="./assets/boot.gif" width="750" alt="Spring Boot startup banner"/>
 </div>
@@ -92,15 +42,6 @@ graph TB
 ```
 
 ---
-
-<!--
-  PROFILE PHOTO
-  ─────────────────────────────────────────────────────────
-  Floats beside the controller class below — like a Javadoc
-  author tag. Square crop, 300-400px. GitHub avatar works
-  fine too: https://github.com/ishita3075.png?size=400
-  ─────────────────────────────────────────────────────────
--->
 
 ## `DeveloperController.java`
 
@@ -329,19 +270,6 @@ public class IshitaKatiyar {
 ```
 
 </details>
-
-<!--
-  OPTIONAL: assets/demo.gif
-  ─────────────────────────────────────────────────────────
-  A "tail -f" of your flagship project's logs while you hit
-  it with curl/Postman. Record with the same terminalizer
-  flow as the boot GIF. Drop the line below back in if used:
-
-  <div align="center">
-    <img src="./assets/demo.gif" width="700"/>
-  </div>
-  ─────────────────────────────────────────────────────────
--->
 
 ---
 
