@@ -89,65 +89,142 @@ public class IshitaKatiyar {
 <details>
 <summary><b>View Maven pom.xml</b></summary>
 
+<table width="100%">
+<tr>
+<td width="650">
+
 ```xml
-<dependencies>
-    <!-- core -->
-    <dependency>
-        <groupId>language</groupId>
-        <artifactId>java-21</artifactId>
-        <scope>daily-driver</scope>
-    </dependency>
-
-    <!-- framework -->
-    <dependency>
-        <groupId>framework</groupId>
-        <artifactId>spring-boot-3</artifactId>
-        <scope>primary</scope>
-    </dependency>
-
-    <!-- persistence -->
-    <dependency>
-        <groupId>database</groupId>
-        <artifactId>postgresql</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>database</groupId>
-        <artifactId>mysql</artifactId>
-    </dependency>
-
-    <!-- performance -->
-    <dependency>
-        <groupId>cache</groupId>
-        <artifactId>redis</artifactId>
-        <scope>runtime</scope>
-    </dependency>
-
-    <!-- security -->
-    <dependency>
-        <groupId>auth</groupId>
-        <artifactId>spring-security-jwt</artifactId>
-    </dependency>
-
-    <!-- infra -->
-    <dependency>
-        <groupId>devops</groupId>
-        <artifactId>docker</artifactId>
-        <scope>provided</scope>
-    </dependency>
-    <dependency>
-        <groupId>devops</groupId>
-        <artifactId>linux</artifactId>
-        <scope>system</scope>
-    </dependency>
-
-    <!-- tooling -->
-    <dependency>
-        <groupId>tools</groupId>
-        <artifactId>git</artifactId>
-        <scope>essential</scope>
-    </dependency>
-</dependencies>
+<!-- core -->
+<dependency>
+    <groupId>language</groupId>
+    <artifactId>java-21</artifactId>
+    <scope>daily-driver</scope>
+</dependency>
 ```
+
+</td>
+<td width="250" align="center" valign="middle">
+<img src="https://skillicons.dev/icons?i=java" width="48" alt="Java"/>
+</td>
+</tr>
+
+<tr>
+<td>
+
+```xml
+<!-- framework -->
+<dependency>
+    <groupId>framework</groupId>
+    <artifactId>spring-boot-3</artifactId>
+    <scope>primary</scope>
+</dependency>
+```
+
+</td>
+<td align="center" valign="middle">
+<img src="https://skillicons.dev/icons?i=spring" width="48" alt="Spring Boot"/>
+</td>
+</tr>
+
+<tr>
+<td>
+
+```xml
+<!-- persistence -->
+<dependency>
+    <groupId>database</groupId>
+    <artifactId>postgresql</artifactId>
+</dependency>
+<dependency>
+    <groupId>database</groupId>
+    <artifactId>mysql</artifactId>
+</dependency>
+```
+
+</td>
+<td align="center" valign="middle">
+<img src="https://skillicons.dev/icons?i=postgres" width="48" alt="PostgreSQL"/>
+<img src="https://skillicons.dev/icons?i=mysql" width="48" alt="MySQL"/>
+</td>
+</tr>
+
+<tr>
+<td>
+
+```xml
+<!-- performance -->
+<dependency>
+    <groupId>cache</groupId>
+    <artifactId>redis</artifactId>
+    <scope>runtime</scope>
+</dependency>
+```
+
+</td>
+<td align="center" valign="middle">
+<img src="https://skillicons.dev/icons?i=redis" width="48" alt="Redis"/>
+</td>
+</tr>
+
+<tr>
+<td>
+
+```xml
+<!-- security -->
+<dependency>
+    <groupId>auth</groupId>
+    <artifactId>spring-security-jwt</artifactId>
+</dependency>
+```
+
+</td>
+<td align="center" valign="middle">
+<img src="https://skillicons.dev/icons?i=spring" width="48" alt="Spring Security"/>
+</td>
+</tr>
+
+<tr>
+<td>
+
+```xml
+<!-- infra -->
+<dependency>
+    <groupId>devops</groupId>
+    <artifactId>docker</artifactId>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>devops</groupId>
+    <artifactId>linux</artifactId>
+    <scope>system</scope>
+</dependency>
+```
+
+</td>
+<td align="center" valign="middle">
+<img src="https://skillicons.dev/icons?i=docker" width="48" alt="Docker"/>
+<img src="https://skillicons.dev/icons?i=linux" width="48" alt="Linux"/>
+</td>
+</tr>
+
+<tr>
+<td>
+
+```xml
+<!-- tooling -->
+<dependency>
+    <groupId>tools</groupId>
+    <artifactId>git</artifactId>
+    <scope>essential</scope>
+</dependency>
+```
+
+</td>
+<td align="center" valign="middle">
+<img src="https://skillicons.dev/icons?i=git" width="48" alt="Git"/>
+</td>
+</tr>
+</table>
 </details>
 
 ---
