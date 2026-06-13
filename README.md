@@ -13,8 +13,8 @@
                                              |___/            
  :: Ishita Katiyar ::                                   (v1.0.0)
 
-2026-06-12 09:41:02.118  INFO 1 --- [main] c.ishitakatiyar.Profile : Starting Profile using Java 21
-2026-06-12 09:41:02.121  INFO 1 --- [main] c.ishitakatiyar.Profile : No active profile set — running on "ambition"
+2026-06-12 09:41:02.118  INFO 1 --- [main] c.ishitakatiyar.Profile : Starting Java-Backend-Profile on port 8080
+2026-06-12 09:41:02.121  INFO 1 --- [main] c.ishitakatiyar.Profile : Active profiles: high-scalability, system-design
 2026-06-12 09:41:02.847  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (https://github.com/ishita3075)
 ```
 
@@ -63,10 +63,10 @@ graph TB
 @RequestMapping("/developer")
 public class IshitaKatiyar {
 
-    private final String role       = "Backend && System Design";
+    private final String role       = "Java Backend && System Design";
     private final String location   = "India";
-    private final String status     = "Student shipping anyway";
-    private final String philosophy = "Code like prose. Systems scale.";
+    private final String status     = "Designing high-load systems, shipping anyway";
+    private final String philosophy = "Clean code is prose. Distributed systems scale.";
 
     private final List<String> openTo = List.of(
         "collaborations", "open-source", "projects"
@@ -447,7 +447,7 @@ public class IshitaKatiyar {
   "components": {
     "education":   { "status": "UP", "details": { "academicStatus": "student", "major": "Computer Science" } },
     "availability":{ "status": "UP", "details": { "openFor": ["internships", "backend-roles", "open-source"] } },
-    "focus":         { "status": "UP", "details": { "primary": "distributed-systems", "secondary": "spring-ecosystem" } }
+    "focus":         { "status": "UP", "details": { "primary": "java-backend-development", "secondary": "distributed-systems-design" } }
   }
 }
 ```
@@ -458,8 +458,8 @@ public class IshitaKatiyar {
 {
   "currently": {
     "building": "Aarambh Women's Safety App & CIP Contract Analyzer",
-    "learning": ["Spring Boot 3.4", "Local AI Inference (Ollama)", "React Native & Expo SDK 54", "Kotlin Native Modules"],
-    "reading":  "Clean Architecture by Robert C. Martin"
+    "learning": ["Spring Boot 3.4", "Distributed Systems Design Patterns", "React Native & Expo SDK 54", "Kotlin Native Modules"],
+    "reading":  "Designing Data-Intensive Applications by Martin Kleppmann"
   }
 }
 ```
