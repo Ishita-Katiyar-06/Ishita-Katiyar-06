@@ -1,0 +1,46 @@
+name: Generate Retro Lofi Player SVG
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run every hour to keep the track time accurate
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Git Sync
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout main
+          git pull --rebase origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run Stats Generator
+        run: python scripts/generate_lofi_player.py
+
+      - name: Commit and Push Changes
+        run: |
+          git add assets/lofi-player.svg
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update Retro Lofi Player SVG"
+            git push origin main
+          fi

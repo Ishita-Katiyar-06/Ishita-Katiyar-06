@@ -1,0 +1,162 @@
+import os
+import subprocess
+from datetime import datetime, timedelta, timezone
+
+def get_git_metric(command):
+    try:
+        return subprocess.check_output(command, text=True, stderr=subprocess.DEVNULL).strip()
+    except Exception:
+        return ""
+
+def generate_lofi_svg():
+    # Get last commit details to act as the "Song" details
+    last_commit_hash = get_git_metric(["git", "log", "-1", "--pretty=format:%h"]) or "b27c15d"
+    last_commit_msg = get_git_metric(["git", "log", "-1", "--pretty=format:%s"]) or "tweak README wording"
+    
+    # Truncate commit message to avoid overflow on the player display
+    if len(last_commit_msg) > 30:
+        last_commit_msg = last_commit_msg[:27] + "..."
+
+    # Current time in Asia/Kolkata (IST is UTC + 5:30)
+    ist_now = datetime.now(timezone.utc) + timedelta(hours=5, minutes=30)
+    last_update_str = ist_now.strftime("%H:%M")
+    
+    # Calculate track progress (current minute of the day out of 1440 minutes)
+    current_minutes = (ist_now.hour * 60) + ist_now.minute
+    progress_pct = (current_minutes / 1440) * 100
+    progress_width = (progress_pct / 100) * 300  # Total progress line width is 300px
+
+    # Self-contained SVG template with inline CSS keyframe animations
+    svg_template = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120">
+  <defs>
+    <style>
+      /* Cassette Spindle Spin Keyframes (Fixed 0 0 local origin) */
+      @keyframes spin-clockwise {{
+        from {{ transform: rotate(0deg); }}
+        to {{ transform: rotate(360deg); }}
+      }}
+      .spindle-left {{
+        animation: spin-clockwise 8s linear infinite;
+        transform-origin: 0px 0px;
+      }}
+      .spindle-right {{
+        animation: spin-clockwise 8s linear infinite;
+        transform-origin: 0px 0px;
+      }}
+
+      /* Equalizer Bouncing Keyframes */
+      @keyframes eq-bounce {{
+        0%, 100% {{ transform: scaleY(0.15); }}
+        50% {{ transform: scaleY(1.0); }}
+      }}
+      .eq-bar {{
+        animation: eq-bounce 1s ease-in-out infinite;
+      }}
+      .bar-1 {{ animation-delay: 0.1s; animation-duration: 0.9s; transform-origin: 232px 50px; }}
+      .bar-2 {{ animation-delay: 0.3s; animation-duration: 1.1s; transform-origin: 240px 50px; }}
+      .bar-3 {{ animation-delay: 0.5s; animation-duration: 0.8s; transform-origin: 248px 50px; }}
+      .bar-4 {{ animation-delay: 0.2s; animation-duration: 1.2s; transform-origin: 256px 50px; }}
+      .bar-5 {{ animation-delay: 0.4s; animation-duration: 1.0s; transform-origin: 264px 50px; }}
+      .bar-6 {{ animation-delay: 0.6s; animation-duration: 0.9s; transform-origin: 272px 50px; }}
+      .bar-7 {{ animation-delay: 0.1s; animation-duration: 1.1s; transform-origin: 280px 50px; }}
+      .bar-8 {{ animation-delay: 0.3s; animation-duration: 0.8s; transform-origin: 288px 50px; }}
+    </style>
+
+    <!-- Glow Filter for Progress Bar -->
+    <filter id="glow-neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container Border & Background (Solid Space Colors) -->
+  <rect x="1" y="1" width="518" height="118" rx="10" fill="#0b0f19" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- LEFT PANEL: COZY CASSETTE DECK (Centred and aligned at x=75) -->
+  <g transform="translate(15, 0)">
+    <!-- Cassette Outer Case -->
+    <rect x="10" y="20" width="130" height="80" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
+    
+    <!-- Neon Cassette Label Stripe (Hot Pink) -->
+    <rect x="18" y="26" width="114" height="12" fill="#ff6b9d" rx="2" />
+    <text x="75" y="34" fill="#0d1117" font-family="Courier New, monospace" font-size="7.5" font-weight="bold" text-anchor="middle" letter-spacing="1">TDK D90</text>
+
+    <!-- Cassette Internal Window -->
+    <rect x="35" y="44" width="80" height="32" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    
+    <!-- Tape Rolls (Wound effect - Centred at x=55 and x=95) -->
+    <circle cx="55" cy="60" r="18" fill="#443c3d" opacity="0.45" />
+    <circle cx="95" cy="60" r="15" fill="#443c3d" opacity="0.45" />
+
+    <!-- Left Spindle (Centred at x=55, cy=60) -->
+    <g transform="translate(55, 60)">
+      <g class="spindle-left">
+        <circle cx="0" cy="0" r="9" fill="#21262d" />
+        <circle cx="0" cy="0" r="4" fill="#0d1117" />
+        <circle cx="0" cy="0" r="7.5" fill="none" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="3 3" />
+      </g>
+    </g>
+
+    <!-- Right Spindle (Centred at x=95, cy=60) -->
+    <g transform="translate(95, 60)">
+      <g class="spindle-right">
+        <circle cx="0" cy="0" r="9" fill="#21262d" />
+        <circle cx="0" cy="0" r="4" fill="#0d1117" />
+        <circle cx="0" cy="0" r="7.5" fill="none" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="3 3" />
+      </g>
+    </g>
+
+    <!-- Cassette Screw Details -->
+    <circle cx="14" cy="24" r="1.5" fill="#30363d" />
+    <circle cx="136" cy="24" r="1.5" fill="#30363d" />
+    <circle cx="14" cy="96" r="1.5" fill="#30363d" />
+    <circle cx="136" cy="96" r="1.5" fill="#30363d" />
+  </g>
+
+  <!-- RIGHT PANEL: MUSIC PLAYER CONSOLE -->
+  <g transform="translate(180, 0)">
+    <!-- Track Title (Latest Git Commit Message) -->
+    <text x="0" y="38" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="bold" letter-spacing="0.25">{last_commit_msg}</text>
+    
+    <!-- Playlist Label -->
+    <text x="0" y="54" fill="#9ca3af" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="9" font-weight="bold" letter-spacing="0.5">Playlist: System Design &amp; Chill</text>
+    
+    <!-- Commit ID & Engine Details -->
+    <text x="0" y="69" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8.5" font-weight="bold" letter-spacing="0.25">Commit: {last_commit_hash} | Java 21</text>
+
+    <!-- Equalizer Spectrum Bars (Self-bouncing) -->
+    <rect class="eq-bar bar-1" x="230" y="25" width="4" height="25" rx="1.25" fill="#00ffd2" />
+    <rect class="eq-bar bar-2" x="238" y="25" width="4" height="25" rx="1.25" fill="#00ffd2" />
+    <rect class="eq-bar bar-3" x="246" y="25" width="4" height="25" rx="1.25" fill="#00ffd2" />
+    <rect class="eq-bar bar-4" x="254" y="25" width="4" height="25" rx="1.25" fill="#00ffd2" />
+    <rect class="eq-bar bar-5" x="262" y="25" width="4" height="25" rx="1.25" fill="#00ffd2" />
+    <rect class="eq-bar bar-6" x="270" y="25" width="4" height="25" rx="1.25" fill="#00ffd2" />
+    <rect class="eq-bar bar-7" x="278" y="25" width="4" height="25" rx="1.25" fill="#00ffd2" />
+    <rect class="eq-bar bar-8" x="286" y="25" width="4" height="25" rx="1.25" fill="#00ffd2" />
+
+    <!-- Playback Indicator Badge (Fixed Width) -->
+    <g transform="translate(250, 60)">
+      <rect x="0" y="0" width="50" height="11" rx="2.5" fill="#061712" stroke="#047857" stroke-width="0.5" />
+      <circle cx="6" cy="5.5" r="2" fill="#10b981" />
+      <text x="13" y="8" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="7" font-weight="bold" letter-spacing="0.5">PLAYING</text>
+    </g>
+
+    <!-- Progress Track Line -->
+    <line x1="0" y1="88" x2="300" y2="88" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round" />
+    
+    <!-- Neon Progress Fill (Solid Cyan with Glow) -->
+    <line x1="0" y1="88" x2="{progress_width}" y2="88" stroke="#00ffd2" stroke-width="2.5" stroke-linecap="round" filter="url(#glow-neon)" />
+
+    <!-- Time Counter (Current Time IST / Total Day) -->
+    <text x="300" y="102" fill="#6b7280" font-family="Courier New, monospace" font-size="8.5" font-weight="bold" text-anchor="end">{last_update_str} / 24:00</text>
+  </g>
+</svg>
+"""
+    # Create assets dir if not exist
+    os.makedirs("assets", exist_ok=True)
+    with open("assets/lofi-player.svg", "w", encoding="utf-8") as f:
+        f.write(svg_template)
+    print("Retro Lofi Player SVG successfully generated at assets/lofi-player.svg")
+
+if __name__ == "__main__":
+    generate_lofi_svg()

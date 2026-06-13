@@ -626,6 +626,8 @@ Process finished with exit code 0
 ---
 
 <div align="center">
+  <img src="./assets/lofi-player.svg" alt="Retro Lofi Player" width="560" />
+  <br><br>
   <img src="./assets/loading.gif" width="100%" alt="Loading Pacman"/>
   <br><br>
   
