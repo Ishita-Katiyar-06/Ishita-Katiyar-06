@@ -22,6 +22,10 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=2200&pause=600&color=3FB950&center=true&vCenter=true&width=600&height=35&lines=Bean+%27javaProficiency%27+registered+(singleton);Bean+%27springBootExpertise%27+registered+(primary);Bean+%27growthMindset%27+registered+(never+recycled);Started+Profile+in+2.847+seconds;%3A%3A+Always+running+%3A%3A)](https://git.io/typing-svg)
 
+<br><br>
+
+<img src="./assets/jvm-monitor.svg" alt="JVM System Monitor" width="480" />
+
 </div>
 
 ---
