@@ -77,9 +77,14 @@ public class IshitaKatiyar {
 
 <div align="center">
   <kbd>
-    <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,docker,linux,git" alt="Tech Stack" />
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,docker,linux,git" alt="Tech Stack" /> &nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
+    &nbsp;
   </kbd>
 </div>
+
+<br>
 
 <details>
 <summary><b>View Maven pom.xml</b></summary>
