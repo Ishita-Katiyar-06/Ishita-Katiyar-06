@@ -41,11 +41,11 @@
     
     <!-- Circular Gauge Progress (Solid Emerald Green) -->
     <circle cx="65" cy="65" r="30" fill="none" stroke="#10b981" stroke-width="6.5" 
-            stroke-dasharray="188.5" stroke-dashoffset="62.205" 
+            stroke-dasharray="188.5" stroke-dashoffset="54.66499999999999" 
             stroke-linecap="round" transform="rotate(-90 65 65)" filter="url(#glow-node)" />
             
     <!-- Value Text Inside Circle -->
-    <text x="65" y="69" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" text-anchor="middle">67%</text>
+    <text x="65" y="69" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" text-anchor="middle">71%</text>
     <text x="65" y="110" fill="#9ca3af" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="9" text-anchor="middle" font-weight="bold" letter-spacing="0.5">ALLOCATED</text>
   </g>
 
@@ -93,7 +93,7 @@
       <rect x="0" y="0" width="130" height="22" rx="5" fill="#111827" stroke="#1f2937" stroke-width="1"/>
       <text x="8" y="14" fill="#9ca3af" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8.5" font-weight="bold" letter-spacing="0.5">GC RUNS</text>
       <rect x="95" y="4" width="28" height="14" rx="3" fill="#201007" />
-      <text x="109" y="14" fill="#f97316" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="9" font-weight="bold" text-anchor="middle">3</text>
+      <text x="109" y="14" fill="#f97316" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="9" font-weight="bold" text-anchor="middle">4</text>
     </g>
 
     <!-- System Uptime Card -->
