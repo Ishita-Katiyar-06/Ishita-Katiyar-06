@@ -91,7 +91,7 @@ public class IshitaKatiyar {
 <div align="center">
   <kbd>
     <br>
-    &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,mongodb,redis,docker,linux,git,c,cpp,python,html,css,js,postman&perline=8" alt="Tech Stack" /> &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,mongodb,redis,docker,linux,git,c,cpp,python,html,css,js,postman,vite,figma&perline=9" alt="Tech Stack" /> &nbsp;&nbsp;&nbsp;&nbsp;
     <br>
     &nbsp;
   </kbd>
@@ -315,6 +315,42 @@ public class IshitaKatiyar {
 </td>
 <td align="center" valign="middle">
 <img src="https://skillicons.dev/icons?i=postman" width="48" alt="Postman"/>
+</td>
+</tr>
+
+<tr>
+<td>
+
+```xml
+<!-- frontend-bundler -->
+<dependency>
+    <groupId>tools</groupId>
+    <artifactId>vite</artifactId>
+    <scope>build-and-hot-reload</scope>
+</dependency>
+```
+
+</td>
+<td align="center" valign="middle">
+<img src="https://skillicons.dev/icons?i=vite" width="48" alt="Vite"/>
+</td>
+</tr>
+
+<tr>
+<td>
+
+```xml
+<!-- design-prototyping -->
+<dependency>
+    <groupId>tools</groupId>
+    <artifactId>figma</artifactId>
+    <scope>ui-ux-design</scope>
+</dependency>
+```
+
+</td>
+<td align="center" valign="middle">
+<img src="https://skillicons.dev/icons?i=figma" width="48" alt="Figma"/>
 </td>
 </tr>
 </table>
