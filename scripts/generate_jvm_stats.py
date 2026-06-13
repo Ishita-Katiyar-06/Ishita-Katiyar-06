@@ -106,7 +106,7 @@ def get_commit_streaks_and_today():
 def get_last_commits():
     try:
         output = subprocess.check_output(
-            ["git", "log", "-3", "--pretty=format:%h|%s"],
+            ["git", "log", "-2", "--pretty=format:%h|%s"],
             text=True,
             stderr=subprocess.DEVNULL
         )
@@ -120,11 +120,11 @@ def get_last_commits():
                 if len(msg) > 34:
                     msg = msg[:31] + "..."
                 commits.append((h, msg))
-        while len(commits) < 3:
+        while len(commits) < 2:
             commits.append(("0000000", "no commit found"))
         return commits
     except Exception:
-        return [("0000000", "no commit found")] * 3
+        return [("0000000", "no commit found")] * 2
 
 def generate_svg():
     # Calculate real stats
@@ -175,7 +175,7 @@ def generate_svg():
         else:
             circles_svg += f'<circle cx="{x}" cy="{y}" r="3" fill="#00d2ff" stroke="#0b0f19" stroke-width="0.75" />'
 
-    # Fetch last 3 commits
+    # Fetch last 2 commits
     last_commits = get_last_commits()
     commit_lines_svg = ""
     for idx, (h, msg) in enumerate(last_commits):
@@ -262,13 +262,13 @@ def generate_svg():
     <text x="295" y="84" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8" font-weight="bold" text-anchor="end">TODAY</text>
     
     <!-- Commit Log Terminal Box -->
-    <rect x="15" y="95" width="295" height="60" rx="4" fill="#0d1117" stroke="#1f2937" stroke-width="1" />
+    <rect x="15" y="95" width="295" height="48" rx="4" fill="#0d1117" stroke="#1f2937" stroke-width="1" />
     
     <!-- Terminal Title / Control Dots -->
     <circle cx="25" cy="103" r="2.5" fill="#ef4444" />
     <circle cx="32" cy="103" r="2.5" fill="#f59e0b" />
     <circle cx="39" cy="103" r="2.5" fill="#10b981" />
-    <text x="49" y="106" fill="#6b7280" font-family="Courier New, monospace" font-size="7" font-weight="bold">bash - git log -n 3</text>
+    <text x="49" y="106" fill="#6b7280" font-family="Courier New, monospace" font-size="7" font-weight="bold">bash - git log -n 2</text>
     
     <!-- Terminal Commits -->
     {commit_lines_svg}
