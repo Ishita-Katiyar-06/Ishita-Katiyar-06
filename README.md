@@ -49,7 +49,7 @@
 -->
 
 <div align="center">
-  <img src="./assets/boot.webp" width="750" alt="Spring Boot startup banner"/>
+  <img src="./assets/boot.gif" width="750" alt="Spring Boot startup banner"/>
 </div>
 
 <br>
@@ -104,10 +104,6 @@ graph TB
 
 ## `DeveloperController.java`
 
-<table width="100%">
-<tr>
-<td width="580" valign="top">
-
 ```java
 @RestController
 @RequestMapping("/developer")
@@ -133,21 +129,6 @@ public class IshitaKatiyar {
     }
 }
 ```
-
-</td>
-<td width="320" valign="middle" align="center">
-<img src="./assets/profile.png" width="220" alt="Ishita Katiyar"/>
-
-```properties
-# app.yml
-port=8080
-stack=java
-tests=pass
-```
-
-</td>
-</tr>
-</table>
 
 ---
 
