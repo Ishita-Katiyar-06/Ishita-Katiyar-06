@@ -93,7 +93,7 @@
     <text x="0" y="54" fill="#9ca3af" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="9" font-weight="bold" letter-spacing="0.5">Playlist: System Design &amp; Chill</text>
     
     <!-- Commit ID & Engine Details -->
-    <text x="0" y="69" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8.5" font-weight="bold" letter-spacing="0.25">Commit: 4e1ea82 | Java 21</text>
+    <text x="0" y="69" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="8.5" font-weight="bold" letter-spacing="0.25">Commit: fa47c50 | Java 21</text>
 
     <!-- Equalizer Spectrum Bars (Self-bouncing) -->
     <rect class="eq-bar bar-1" x="230" y="25" width="4" height="25" rx="1.25" fill="#00ffd2" />
@@ -116,9 +116,9 @@
     <line x1="0" y1="88" x2="300" y2="88" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round" />
     
     <!-- Neon Progress Fill (Solid Cyan with Glow) -->
-    <line x1="0" y1="88" x2="258.33333333333337" y2="88" stroke="#00ffd2" stroke-width="2.5" stroke-linecap="round" filter="url(#glow-neon)" />
+    <line x1="0" y1="88" x2="286.45833333333337" y2="88" stroke="#00ffd2" stroke-width="2.5" stroke-linecap="round" filter="url(#glow-neon)" />
 
     <!-- Time Counter (Current Time IST / Total Day) -->
-    <text x="300" y="102" fill="#6b7280" font-family="Courier New, monospace" font-size="8.5" font-weight="bold" text-anchor="end">20:40 / 24:00</text>
+    <text x="300" y="102" fill="#6b7280" font-family="Courier New, monospace" font-size="8.5" font-weight="bold" text-anchor="end">22:55 / 24:00</text>
   </g>
 </svg>
